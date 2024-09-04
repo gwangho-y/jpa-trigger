@@ -1,0 +1,33 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 256MB
+  profiles:
+    active: local
+    group:
+      local:
+        - db
+        - jpa
+        - server
+        - redis
+        - cache
+  main:
+    banner-mode: off
+  data:
+    jdbc:
+      repositories:
+        enabled: false
+
+logging:
+  level:
+    org.springframework.data.redis.connection: info
+#    org.hibernate.type.descriptor.sql: trace
+#    org.hibernate.sql: trace
+#    feign: trace
+
+#    com.kovo.client.interpark: info
+#    com.kovo.application.player: debug
+
+
+

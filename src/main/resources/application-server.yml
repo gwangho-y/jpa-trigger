@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: "local"
+server:
+  allowedOrigins: https://kovoapp.com:*,
+    https://localhost:*,
+    http://localhost:*,
+    http://127.0.0.1:*,
+    http://0.0.0.0:*,
+    https://maydayplatform.cafe24.com/,
+    https://*.kovoapp.com:*,
+    https://*.kovo.co.kr,
+    http://20.214.188.187:*,
+    https://cert.vno.co.kr:*,
+    https://203.234.219.124:*
+  port: 8080
+  X-Wevent-Core-Signature: "kovo123"
